@@ -1,105 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="overflow-x-hidden">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechWave</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechWave</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="font-inter overflow-x-hidden bg-[#0f061d]">
+<body class="text-white font-inter overflow-x-hidden bg-[#0f061d]">
+    <!-- ================= HEADER ================= -->
+    <header class="bg-[#1A0B2E] py-10 overflow-x-hidden">
+        <nav class="text-white max-w-[1360px] mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <img src="./images/TechWave.png" alt="TechWave Logo" class="max-w-full" />
 
-  <!-- ================= HEADER ================= -->
-  <header class="bg-[#1A0B2E] py-10 overflow-x-hidden">
-    <nav class="text-white max-w-[1360px] mx-auto px-4 flex justify-between items-center">
+            <!-- Menu (Desktop only) -->
+            <ul class="hidden lg:flex gap-8 text-[16px] font-medium capitalize">
+                <li><a href="#" class="hover:text-pink-400 transition">About</a></li>
+                <li>
+                    <a href="#" class="hover:text-pink-400 transition">Episodes</a>
+                </li>
+                <li><a href="#" class="hover:text-pink-400 transition">Host</a></li>
+            </ul>
 
-      <!-- Logo -->
-      <img
-        src="./images/TechWave.png"
-        alt="TechWave Logo"
-        class="max-w-full"
-      />
+            <!-- Menu Icon (Mobile only) -->
+            <div class="lg:hidden text-xl cursor-pointer">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-      <!-- Menu (Desktop only) -->
-      <ul class="hidden lg:flex gap-8 text-[16px] font-medium capitalize">
-        <li><a href="#" class="hover:text-pink-400 transition">About</a></li>
-        <li><a href="#" class="hover:text-pink-400 transition">Episodes</a></li>
-        <li><a href="#" class="hover:text-pink-400 transition">Host</a></li>
-      </ul>
+            <!-- Subscribe Button (Desktop only) -->
+            <div
+                class="hidden lg:flex w-[135px] justify-center items-center gap-1 px-4 py-3 rounded-full bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] transition-transform duration-300 hover:scale-105 cursor-pointer">
+                <button>Subscribe</button>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </nav>
 
-      <!-- Menu Icon (Mobile only) -->
-      <div class="lg:hidden text-xl cursor-pointer">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+        <hr class="bg-[#FB09B4] h-[2px] mt-4" />
+    </header>
 
-      <!-- Subscribe Button (Desktop only) -->
-      <div
-        class="hidden lg:flex w-[135px] justify-center items-center gap-1 px-4 py-3 rounded-full
-               bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]
-               transition-transform duration-300 hover:scale-105 cursor-pointer">
-        <button>Subscribe</button>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
+    <main>
 
-    </nav>
+        <!-- hero section  -->
+        <section>
+            <div
+                class="bg-[url(./images/hero-bg.png)] bg-center bg-no-repeat bg-cover min-h-screen flex flex-col items-center justify-center gap-6 relative">
 
-    <hr class="bg-[#FB09B4] h-[2px] mt-4" />
-  </header>
+                <img class="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] border-[6px] border-[rgba(42,24,108,1)] bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] p-6 rounded-full transition-transform duration-500 hover:scale-105"
+                    src="./images/hero-circle.png" alt="" />
 
-  <!-- ================= FOOTER ================= -->
-  <footer class="bg-[url(./images/footer-bg.png)] bg-center overflow-x-hidden py-12 px-6 lg:py-32">
-    <div class="max-w-[400px] lg:max-w-[1360px] mx-auto flex flex-col items-center gap-6 lg:gap-8">
+                <img class="absolute z-10 top-74 w-[60px] h-[90px] lg:top-70 lg:w-[140px] lg:h-[220px]"
+                    src="./images/microphone.png" alt="" />
 
-      <!-- Footer Logo -->
-      <img
-        class="w-[200px] lg:w-[300px] transition-transform duration-500 hover:scale-105"
-        src="./images/TechWave.png"
-        alt="TechWave Logo"
-      />
+                <div
+                    class="absolute top-65 left-56 lg:top-60 lg:left-254  w-[75px] h-[38px] flex items-center justify-center gap-2.5 px-4 py-2 rounded-full bg-[#00FF88] shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]">
+                    <h1
+                        class=" w-[43px] h-[22px] text-[#1A0B2E] font-inter font-semibold text-[18px] leading-[22px] tracking-normal text-left capitalize">
+                        New</h1>
+                </div>
 
-      <!-- Social Links -->
-      <div class="grid grid-cols-2 lg:flex items-center justify-center gap-4 lg:gap-10 w-full">
+                <div class="w-[400px] h-[162px] flex flex-col items-center justify-start gap-6">
+                    <h1
+                        class="text-white font-inter font-extrabold text-[40px] leading-[48px] tracking-normal text-center capitalize lg:w-[550px] lg:h-[73px]">
+                        TechWave</h1>
+                    <p
+                        class="w-[400px] h-[38px] text-white/80 font-inter text-[16px] font-normal leading-[19px] text-center lg:w-[550px] lg:h-[19px]">
+                        Your daily dose of tech insights, productivity hacks, and personal growth</p>
 
-        <!-- Item -->
-        <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
-          <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/spotify.png" />
-          <span class="text-white group-hover:text-green-400 transition">Spotify</span>
+                    <div class="flex gap-1 lg:gap-x-4">
+                        <div
+                            class="w-[201px] h-[44px] flex flex-row items-center justify-center gap-2 px-5 py-3 rounded-full bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))]">
+                            <img class="w-5 h-5" src="./images/spotify.png" alt="" />
+                            <button
+                                class="text-[#FFFFFF] font-inter font-semibold text-base leading-[19px] tracking-normal text-left capitalize">Listen
+                                On Spotify</button>
+                        </div>
+
+                        <div
+                            class="w-[147px] h-[44px] border border-[#00FF88] rounded-full flex items-center justify-center gap-2 px-5 py-3">
+                            <img class="w-5 h-5" src="./images/message.png" alt="" />
+                            <button
+                                class="text-[#00FF88] font-inter font-semibold text-base leading-[19px] tracking-normal text-left capitalize">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-[url(./images/footer-bg.png)] bg-center overflow-x-hidden py-12 px-6 lg:py-32">
+        <div class="max-w-[400px] lg:max-w-[1360px] mx-auto flex flex-col items-center gap-6 lg:gap-8">
+            <!-- Footer Logo -->
+            <img class="w-[200px] lg:w-[300px] transition-transform duration-500 hover:scale-105"
+                src="./images/TechWave.png" alt="TechWave Logo" />
+
+            <!-- Social Links -->
+            <div class="grid grid-cols-2 lg:flex items-center justify-center gap-4 lg:gap-10 w-full">
+                <!-- Item -->
+                <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
+                    <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/spotify.png" />
+                    <span class="text-white group-hover:text-green-400 transition">Spotify</span>
+                </div>
+
+                <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
+                    <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/apple-podcast.png" />
+                    <span class="text-white group-hover:text-purple-400 transition">Apple Podcasts</span>
+                </div>
+
+                <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
+                    <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/youtube.png" />
+                    <span class="text-white group-hover:text-red-500 transition">YouTube</span>
+                </div>
+
+                <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
+                    <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/twitter.png" />
+                    <span class="text-white group-hover:text-sky-400 transition">Twitter</span>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <p class="text-[#FAFAFA] text-sm lg:text-base text-center opacity-80 hover:opacity-100 transition">
+                © 2026 TechWave Podcast. All rights reserved.
+            </p>
         </div>
-
-        <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
-          <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/apple-podcast.png" />
-          <span class="text-white group-hover:text-purple-400 transition">Apple Podcasts</span>
-        </div>
-
-        <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
-          <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/youtube.png" />
-          <span class="text-white group-hover:text-red-500 transition">YouTube</span>
-        </div>
-
-        <div class="group flex items-center gap-2 justify-center hover:scale-105 transition cursor-pointer">
-          <img class="w-6 h-6 group-hover:rotate-6 transition" src="./images/twitter.png" />
-          <span class="text-white group-hover:text-sky-400 transition">Twitter</span>
-        </div>
-
-      </div>
-
-      <!-- Copyright -->
-      <p class="text-[#FAFAFA] text-sm lg:text-base text-center opacity-80 hover:opacity-100 transition">
-        © 2026 TechWave Podcast. All rights reserved.
-      </p>
-
-    </div>
-  </footer>
-
+    </footer>
 </body>
+
 </html>
