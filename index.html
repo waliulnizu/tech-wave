@@ -63,13 +63,14 @@
           class="bg-[url(./images/hero-bg.png)] bg-center bg-no-repeat bg-cover py-20 flex flex-col items-center justify-center gap-6 relative"
         >
           <img
-            class="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] border-[6px] border-[rgba(42,24,108,1)] bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] p-6 rounded-full transition-transform duration-500 hover:scale-105"
+            class="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] border-[6px] border-[rgba(42,24,108,1)] bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] p-6 rounded-full animate-spin hover:scale-105 transition-transform duration-700 ease-out"
+            style="animation-duration: 20s"
             src="./images/hero-circle.png"
             alt=""
           />
 
           <img
-            class="absolute z-10 top-34 w-[60px] h-[90px] lg:top-36 lg:w-[140px] lg:h-[220px]"
+            class="absolute z-10 top-34 w-[60px] h-[90px] lg:top-36 lg:w-[140px] lg:h-[220px] animate-[float_4s_ease-in-out_infinite]"
             src="./images/microphone.png"
             alt=""
           />
@@ -217,7 +218,7 @@
           <div
             class="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:grid-rows-3 lg:gap-8"
           >
-            <!-- Premium Audio Quality (col-1, row-1 to row-2) -->
+            <!-- Premium Audio Quality -->
             <div
               class="flex flex-col gap-4 rounded-[24px] bg-[#351165] p-6 lg:col-span-1 lg:row-span-2 lg:rounded-[40px] lg:p-10"
             >
@@ -238,7 +239,7 @@
               </p>
             </div>
 
-            <!-- Mobile Friendly (col-2 to col-3, row-1) -->
+            <!-- Mobile Friendly -->
             <div
               class="flex flex-col gap-4 rounded-[24px] bg-[#351165] p-6 lg:col-span-2 lg:row-span-1 lg:rounded-[40px] lg:p-10"
             >
@@ -258,7 +259,7 @@
               </p>
             </div>
 
-            <!-- Global Community (col-2 to col-3, row-2) -->
+            <!-- Global Community -->
             <div
               class="flex flex-col gap-4 rounded-[24px] bg-[#351165] p-6 lg:col-span-2 lg:row-span-1 lg:rounded-[40px] lg:p-10"
             >
@@ -277,7 +278,7 @@
               </p>
             </div>
 
-            <!-- Exclusive Interviews (col-1 to col-2, row-3) -->
+            <!-- Exclusive Interviews -->
             <div
               class="flex flex-col gap-4 rounded-[24px] bg-[#351165] p-6 lg:col-span-2 lg:row-span-1 lg:rounded-[40px] lg:p-10"
             >
@@ -299,7 +300,7 @@
               </p>
             </div>
 
-            <!-- Rich Resources (col-3, row-3) -->
+            <!-- Rich Resources -->
             <div
               class="flex flex-col gap-4 rounded-[24px] bg-[#351165] p-6 lg:col-span-1 lg:row-span-1 lg:rounded-[40px] lg:p-10"
             >
@@ -317,6 +318,224 @@
                 Access show notes, transcripts, and additional learning
                 materials for every episode.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Episodes Section -->
+      <section class="bg-[#1A0B2E]">
+        <div class="container mx-auto px-4 py-6 lg:py-12">
+          <h2
+            class="text-white font-inter font-bold text-[32px] leading-[39px] text-center capitalize mb-10 lg:text-[48px] lg:leading-[58px]"
+          >
+            Featured Episodes
+          </h2>
+
+          <!-- Videos Container -->
+          <div
+            class="flex flex-col gap-8 lg:flex-row lg:gap-6 lg:justify-between"
+          >
+            <!-- Video Card 1 -->
+            <div
+              class="bg-[#250D44] flex flex-col gap-4 w-full lg:w-[32%] rounded-3xl"
+            >
+              <iframe
+                class="rounded-t-3xl"
+                width="100%"
+                height="240"
+                src="https://www.youtube.com/embed/YiSQ_db-Dcw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+
+              <div class="p-4 flex flex-col gap-4">
+                <h3
+                  class="text-white font-inter font-bold text-[20px] lg:text-[24px] leading-[24px] lg:leading-[29px]"
+                >
+                  The Future of AI in Everyday Life
+                </h3>
+                <p class="text-white/60 font-inter text-[16px] leading-[24px]">
+                  Exploring how artificial intelligence is transforming our
+                  daily routines and what to expect in the next decade.
+                </p>
+                <div class="flex items-center gap-2">
+                  <img class="w-5 h-5" src="./images/clock.png" alt="" />
+                  <span
+                    class="text-[#00FF88] font-inter font-semibold text-[16px] leading-[24px]"
+                    >42 min</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div
+              class="bg-[#250D44] flex flex-col gap-4 w-full lg:w-[32%] rounded-3xl"
+            >
+              <iframe
+                class="rounded-t-3xl"
+                width="100%"
+                height="240"
+                src="https://www.youtube.com/embed/FfdCAR9bgkw"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+
+              <div class="p-4 flex flex-col gap-4">
+                <h3
+                  class="text-white font-inter font-bold text-[20px] lg:text-[24px] leading-[24px] lg:leading-[29px]"
+                >
+                  Building Better Habits for Remote Work
+                </h3>
+                <p class="text-white/60 font-inter text-[16px] leading-[24px]">
+                  Practical strategies for staying productive and maintaining
+                  work-life balance in a remote environment.
+                </p>
+                <div class="flex items-center gap-2">
+                  <img class="w-5 h-5" src="./images/clock.png" alt="" />
+                  <span
+                    class="text-[#00FF88] font-inter font-semibold text-[16px] leading-[24px]"
+                    >42 min</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div
+              class="bg-[#250D44] flex flex-col gap-4 w-full lg:w-[32%] rounded-3xl"
+            >
+              <iframe
+                class="rounded-t-3xl"
+                width="100%"
+                height="240"
+                src="https://www.youtube.com/embed/wyTwFhNVYL8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                allowfullscreen
+              ></iframe>
+
+              <div class="p-4 flex flex-col gap-4">
+                <h3
+                  class="text-white font-inter font-bold text-[20px] lg:text-[24px] leading-[24px] lg:leading-[29px]"
+                >
+                  Career Growth in Tech: A Roadmap
+                </h3>
+                <p class="text-white/60 font-inter text-[16px] leading-[24px]">
+                  Expert advice on navigating your tech career from junior
+                  developer to senior leadership roles.
+                </p>
+                <div class="flex items-center gap-2">
+                  <img class="w-5 h-5" src="./images/clock.png" alt="" />
+                  <span
+                    class="text-[#00FF88] font-inter font-semibold text-[16px] leading-[24px]"
+                    >42 min</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ================= Meet the Host ================= -->
+          <h2
+            class="text-white font-inter font-bold text-[32px] leading-[39px] text-center capitalize mt-10 mb-5 lg:mt-20 lg:mb-10 lg:text-[48px] lg:leading-[58px]"
+          >
+            Meet the Host
+          </h2>
+          <div class="w-full bg-[#351165]/40 mt-5 lg:mt-10 rounded-3xl">
+            <div class="container mx-auto px-4 py-2">
+              <div
+                class="flex flex-col items-center gap-6 p-6 w-full rounded-[24px] lg:flex-row lg:gap-10 lg:p-10 lg:rounded-[40px]"
+              >
+                <!-- Image -->
+                <div class="flex-shrink-0">
+                  <img
+                    src="./images/host.png"
+                    alt="Alex Kumar"
+                    class="w-full max-w-[200px] lg:max-w-[400px] rounded-lg"
+                  />
+                </div>
+
+                <!-- Content -->
+                <div class="text-center lg:text-left lg:flex-1">
+                  <h1 class="text-white font-bold text-[24px] lg:text-[32px]">
+                    Alex Kumar
+                  </h1>
+                  <p class="text-white/60 text-[16px] leading-[24px] mt-4">
+                    Tech entrepreneur, productivity expert, and lifelong
+                    learner. Alex has been in the tech industry for over 10
+                    years, working with startups and Fortune 500 companies.
+                    Through TechWave, Alex shares insights from industry leaders
+                    and practical advice for anyone looking to grow in tech.
+                  </p>
+
+                  <!-- Social -->
+                  <div class="flex justify-center lg:justify-start gap-4 mt-6">
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#0077B5] transition-colors"
+                    >
+                      <img src="./images/linkedin.png" class="w-5 h-5" alt="" />
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-black transition-colors"
+                    >
+                      <img
+                        src="./images/x.png"
+                        class="w-4 h-4 brightness-0 invert"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#E1306C] transition-colors"
+                    >
+                      <img
+                        src="./images/instagram.png"
+                        class="w-5 h-5"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="#"
+                      class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-[#FF0000] transition-colors"
+                    >
+                      <img src="./images/youtube.png" class="w-5 h-5" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
