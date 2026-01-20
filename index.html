@@ -4,14 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TechWave</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        screens: {
+          'sm': '576px',
+          'md': '768px',
+          'lg': '992px',
+          
+        },
         extend: {
-          screens: {
-            'lg': '992px',
-          }
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+          },
         }
       }
     }
@@ -133,6 +139,29 @@
       right: 25%;
       animation: zenoWaveFloat1 8s ease-in-out infinite 3s;
     }
+
+    .hero-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-wrapper::after {
+      content: 'New';
+      position: absolute;
+      top: 14%;
+      right: 14%;
+      transform: translate(50%, -50%); /* Adjust to center the badge on the rim point */
+      background-color: #00FF88;
+      color: #1A0B2E;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      box-shadow: 0px 3px 27px 0px rgba(0,255,136,0.5);
+      animation: zenoWave 4s ease-in-out infinite;
+      z-index: 20;
+    }
   </style>
 </head>
 
@@ -188,15 +217,12 @@
         </svg>
         
         <!-- Animated Circle -->
-        <img class="zeno-circle w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] border-[6px] border-[rgba(42,24,108,1)] bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] p-6 rounded-full" src="./images/hero-circle.png" alt="Hero Circle" />
+        <div class="hero-wrapper">
+          <img class="zeno-circle w-[200px] h-[200px] lg:w-[350px] lg:h-[350px] border-[6px] border-[rgba(42,24,108,1)] bg-[linear-gradient(47.64deg,rgba(247,233,63,1),rgba(251,9,180,1),rgba(145,0,248,1))] p-6 rounded-full" src="./images/hero-circle.png" alt="Hero Circle" />
+        </div>
         
         <!-- Animated Microphone -->
-        <img class="zeno-mic absolute z-10 top-34 w-[60px] h-[90px] lg:top-36 lg:w-[140px] lg:h-[220px]" src="./images/microphone.png" alt="Microphone" />
-        
-        <!-- Animated Badge -->
-        <div class="zeno-badge absolute top-24 left-80 lg:top-30 lg:left-260 w-[75px] h-[38px] flex items-center justify-center gap-2.5 px-4 py-2 rounded-full bg-[#00FF88] shadow-[0px_3px_27px_0px_rgba(0,255,136,0.5)]">
-          <h1 class="w-[43px] h-[22px] text-[#1A0B2E] font-inter font-semibold text-[18px] leading-[22px] tracking-normal text-left capitalize">New</h1>
-        </div>
+        <img class="zeno-mic absolute z-10 top-[144px] w-[60px] h-[90px] lg:top-36 lg:w-[140px] lg:h-[220px]" src="./images/microphone.png" alt="Microphone" />
         
         <div class="w-[400px] h-[162px] flex flex-col items-center justify-start gap-6">
           <h1 class="text-white font-inter font-extrabold text-[40px] leading-[48px] tracking-normal text-center capitalize lg:w-[550px] lg:h-[73px]">TechWave</h1>
